@@ -1,0 +1,27 @@
+[
+  {
+    "model": "question.Question",
+    "pk": 56,
+    "fields": {
+      "label": "Phone or computer?",
+      "category_id": 14
+    }
+  },
+
+    {
+    "model": "question.Question",
+    "pk": 57,
+    "fields": {
+      "label": "Android or Samsung?",
+      "category_id": 14
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 58,
+    "fields": {
+      "label": "Bike or car?",
+      "category_id": 14
+    }
+  }
+]

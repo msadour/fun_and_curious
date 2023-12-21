@@ -1,0 +1,123 @@
+[
+  {
+    "model": "question.Question",
+    "pk": 89,
+    "fields": {
+      "label": "Plane or train?",
+      "category_id": 3
+    }
+  },
+
+    {
+    "model": "question.Question",
+    "pk": 90,
+    "fields": {
+      "label": "See or mountain?",
+      "category_id": 3
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 91,
+    "fields": {
+      "label": "Nature or city?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 92,
+    "fields": {
+      "label": "Italy or Spain?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 93,
+    "fields": {
+      "label": "Alone or with friends/family?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 94,
+    "fields": {
+      "label": "Paris or London?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 95,
+    "fields": {
+      "label": "Backpack or suitcase?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 96,
+    "fields": {
+      "label": "New city or old city?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 97,
+    "fields": {
+      "label": "Cold country or warm country?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 98,
+    "fields": {
+      "label": "Short or long trip?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 99,
+    "fields": {
+      "label": "Lake or ocean?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 100,
+    "fields": {
+      "label": "A country you want to visit?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 101,
+    "fields": {
+      "label": "A country you never visit?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 102,
+    "fields": {
+      "label": "Small town or big town?",
+      "category_id": 3
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 103,
+    "fields": {
+      "label": "Dubai or Marrakech?",
+      "category_id": 3
+    }
+  }
+]

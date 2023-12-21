@@ -1,0 +1,179 @@
+[
+  {
+    "model": "question.Question",
+    "pk": 1,
+    "fields": {
+      "label": "Drink or eating?",
+      "category_id": 1
+    }
+  },
+
+    {
+    "model": "question.Question",
+    "pk": 2,
+    "fields": {
+      "label": "Fish or meat?",
+      "category_id": 1
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 3,
+    "fields": {
+      "label": "Wine or beer?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 4,
+    "fields": {
+      "label": "Butter or oil?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 5,
+    "fields": {
+      "label": "Burger or Döner?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 6,
+    "fields": {
+      "label": "McDonald or Burger king?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 7,
+    "fields": {
+      "label": "Salt or peper?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 8,
+    "fields": {
+      "label": "Rhum or Whisky?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 9,
+    "fields": {
+      "label": "A dish which you never stop to eat?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 10,
+    "fields": {
+      "label": "Eat outside or cooking?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 11,
+    "fields": {
+      "label": "Beef or pork?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 12,
+    "fields": {
+      "label": "Pasta or Pizza?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 13,
+    "fields": {
+      "label": "Chocolate or caramel?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 14,
+    "fields": {
+      "label": "Salad or vegetable?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 15,
+    "fields": {
+      "label": "A dish that you never it anymore?",
+      "category_id": 1
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 16,
+    "fields": {
+      "label": "Cigar? Cigarette or Shisha?",
+      "category_id": 1
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 16,
+    "fields": {
+      "label": "Sweet or salt?",
+      "category_id": 1
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 3,
+    "fields": {
+      "label": "White or red wine?",
+      "category_id": 1
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 3,
+    "fields": {
+      "label": "Cooking or eating?",
+      "category_id": 1
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 3,
+    "fields": {
+      "label": "Olive or peanut??",
+      "category_id": 1
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 3,
+    "fields": {
+      "label": "Tea or coffee??",
+      "category_id": 1
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 3,
+    "fields": {
+      "label": "Salmon or tuna??",
+      "category_id": 1
+    }
+  }
+]

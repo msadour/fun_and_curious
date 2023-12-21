@@ -1,0 +1,12 @@
+__pycache__/
+../fun_and_curious_save/.idea
+.env
+venv
+date_and_curious/.env
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+eb-virt
+.ebextensions
+application.py

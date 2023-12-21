@@ -1,0 +1,85 @@
+[
+  {
+    "model": "question.Question",
+    "pk": 37,
+    "fields": {
+      "label": "Movie or series?",
+      "category_id": 13
+    }
+  },
+
+    {
+    "model": "question.Question",
+    "pk": 38,
+    "fields": {
+      "label": "Sport or beer?",
+      "category_id": 13
+    }
+  },
+
+
+    {
+    "model": "question.Question",
+    "pk": 39,
+    "fields": {
+      "label": "A song you could listen to on a loop?",
+      "category_id": 13
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 40,
+    "fields": {
+      "label": "Cinema or TV?",
+      "category_id": 13
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 41,
+    "fields": {
+      "label": "Read or write?",
+      "category_id": 13
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 42,
+    "fields": {
+      "label": "The last book you read?",
+      "category_id": 13
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 43,
+    "fields": {
+      "label": "Guitar or piano?",
+      "category_id": 13
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 44,
+    "fields": {
+      "label": "Rap or Rock?",
+      "category_id": 13
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 45,
+    "fields": {
+      "label": "Dance or Sing?",
+      "category_id": 13
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 46,
+    "fields": {
+      "label": "Conference or podcast?",
+      "category_id": 13
+    }
+  }
+]

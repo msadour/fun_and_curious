@@ -1,0 +1,131 @@
+[
+  {
+    "model": "question.Question",
+    "pk": 1,
+    "fields": {
+      "label": "Pant or jean?",
+      "category_id": 16
+    }
+  },
+
+  {
+    "model": "question.Question",
+    "pk": 2,
+    "fields": {
+      "label": "Shoes or sneakers?",
+      "category_id": 16
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 3,
+    "fields": {
+      "label": "Backpack or bag?",
+      "category_id": 16
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 4,
+    "fields": {
+      "label": "Shopping or online?",
+      "category_id": 16
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 5,
+    "fields": {
+      "label": "Sportswear or chic?",
+      "category_id": 16
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 6,
+    "fields": {
+      "label": "Casual or punk?",
+      "category_id": 16
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 7,
+    "fields": {
+      "label": "Color or back/white?",
+      "category_id": 16
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 8,
+    "fields": {
+      "label": "Watch or bracelet?",
+      "category_id": 16
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 9,
+    "fields": {
+      "label": "Big or slim plant?",
+      "category_id": 16
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 10,
+    "fields": {
+      "label": "White sneaker or black sneaker?",
+      "category_id": 16
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 11,
+    "fields": {
+      "label": "Nike or Addidas?",
+      "category_id": 16
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 12,
+    "fields": {
+      "label": "Perfume or eau de toilette?",
+      "category_id": 16
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 13,
+    "fields": {
+      "label": "A style which you love?",
+      "category_id": 16
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 14,
+    "fields": {
+      "label": "A style which you don't like?",
+      "category_id": 16
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 15,
+    "fields": {
+      "label": "The perfect dress for a date?",
+      "category_id": 16
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 16,
+    "fields": {
+      "label": "Shirt with flower? Check shirt? or plain shirt?",
+      "category_id": 16
+    }
+  }
+]

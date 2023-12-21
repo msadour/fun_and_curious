@@ -1,0 +1,140 @@
+[
+  {
+    "model": "question.Question",
+    "pk": 59,
+    "fields": {
+      "label": "Introvert or extravert?",
+      "category_id": 4
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 60,
+    "fields": {
+      "label": "Rational or emotional?",
+      "category_id": 4
+    }
+  },
+
+
+    {
+    "model": "question.Question",
+    "pk": 61,
+    "fields": {
+      "label": "Direct or diplomat?",
+      "category_id": 4
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 62,
+    "fields": {
+      "label": "Calm or impulsive?",
+      "category_id": 4
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 63,
+    "fields": {
+      "label": "Solitary or well surrounded?",
+      "category_id": 4
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 64,
+    "fields": {
+      "label": "Friendly or distant?",
+      "category_id": 4
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 65,
+    "fields": {
+      "label": "Talkative or quiet?",
+      "category_id": 4
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 66,
+    "fields": {
+      "label": "Something that make you happy?",
+      "category_id": 4
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 67,
+    "fields": {
+      "label": "Something that make you angry?",
+      "category_id": 4
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 68,
+    "fields": {
+      "label": "Leading or following?",
+      "category_id": 4
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 69,
+    "fields": {
+      "label": "Passive or pro-active?",
+      "category_id": 4
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 70,
+    "fields": {
+      "label": "Which country do you like the personality (people)?",
+      "category_id": 4
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 71,
+    "fields": {
+      "label": "Past? Present or future?",
+      "category_id": 4
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 72,
+    "fields": {
+      "label": "A song which represents you?",
+      "category_id": 4
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 73,
+    "fields": {
+      "label": "To think or to act?",
+      "category_id": 4
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 74,
+    "fields": {
+      "label": "Facebook or Instagram?",
+      "category_id": 4
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 75,
+    "fields": {
+      "label": "Homebody or walker?",
+      "category_id": 4
+    }
+  }
+]

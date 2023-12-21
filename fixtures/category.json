@@ -1,0 +1,79 @@
+[
+  {
+    "model": "question.Category",
+    "pk": 1,
+    "fields": {
+      "label": "Gastronomy"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 2,
+    "fields": {
+      "label": "Sport"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 3,
+    "fields": {
+      "label": "Travel & holiday"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 4,
+    "fields": {
+      "label": "Personality"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 5,
+    "fields": {
+      "label": "Clothes woman"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 6,
+    "fields": {
+      "label": "Polemic"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 7,
+    "fields": {
+      "label": "Love"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 12,
+    "fields": {
+      "label": "Animals"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 13,
+    "fields": {
+      "label": "Hobbies"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 14,
+    "fields": {
+      "label": "Object"
+    }
+  },
+  {
+    "model": "question.Category",
+    "pk": 16,
+    "fields": {
+      "label": "Clothes men"
+    }
+  }
+]

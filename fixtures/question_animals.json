@@ -1,0 +1,42 @@
+[
+  {
+    "model": "question.Question",
+    "pk": 17,
+    "fields": {
+      "label": "Cat or dog?",
+      "category_id": 12
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 18,
+    "fields": {
+      "label": "Which animals terrify you?",
+      "category_id": 12
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 19,
+    "fields": {
+      "label": "The best pet?",
+      "category_id": 12
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 20,
+    "fields": {
+      "label": "The animal you would love to have and haven't seen yet?",
+      "category_id": 12
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 21,
+    "fields": {
+      "label": "Insects or snakes?",
+      "category_id": 12
+    }
+  }
+]

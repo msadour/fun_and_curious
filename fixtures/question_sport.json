@@ -1,0 +1,109 @@
+[
+  {
+    "model": "question.Question",
+    "pk": 76,
+    "fields": {
+      "label": "Gym or Yoga?",
+      "category_id": 2
+    }
+  },
+
+    {
+    "model": "question.Question",
+    "pk": 77,
+    "fields": {
+      "label": "Running or biking?",
+      "category_id": 2
+    }
+  },
+
+
+    {
+    "model": "question.Question",
+    "pk": 78,
+    "fields": {
+      "label": "Individual or collective sport?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 79,
+    "fields": {
+      "label": "Sport in the morning or in the evening?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 80,
+    "fields": {
+      "label": "Outside or inside?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 81,
+    "fields": {
+      "label": "A sport what you never want to do?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 82,
+    "fields": {
+      "label": "A sport which make you happy?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 83,
+    "fields": {
+      "label": "A sport which you like to watch?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 84,
+    "fields": {
+      "label": "Improve yourself or surpass others?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 85,
+    "fields": {
+      "label": "Football or volleyball?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 86,
+    "fields": {
+      "label": "Boxing or dancing?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 87,
+    "fields": {
+      "label": "Normal sport or 'bed sport'?",
+      "category_id": 2
+    }
+  },
+    {
+    "model": "question.Question",
+    "pk": 88,
+    "fields": {
+      "label": "Swimming or hiking?",
+      "category_id": 2
+    }
+  }
+]

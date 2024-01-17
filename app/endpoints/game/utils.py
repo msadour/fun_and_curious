@@ -5,6 +5,7 @@ from django.db.models.query import QuerySet
 
 from app.endpoints.game.models import Game, QuestionCategoryGame
 from app.endpoints.question.models import Category, Question
+from app.endpoints.question.serializers import QuestionSerializer
 from app.endpoints.user_profile.models import Profile
 
 
@@ -43,10 +44,11 @@ def generate_default_game(label: str, author: Optional[Profile] = None) -> list:
             random_count = random.randint(1, length_question_ids)
             random_question_ids: list = random.sample(question_ids, random_count)
 
-        randoms_questions: list = [
-            question.label
-            for question in Question.objects.filter(id__in=random_question_ids)
-        ]
-        questions.append({"category": category.label, "questions": randoms_questions})
+        randoms_questions: QuestionSerializer = QuestionSerializer(
+            data=Question.objects.filter(id__in=random_question_ids),
+            many=True
+        )
+        randoms_questions.is_valid()
+        questions.append({"category": category.label, "questions": randoms_questions.data})
 
     return questions

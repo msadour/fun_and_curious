@@ -116,7 +116,7 @@
     "model": "question.Question",
     "pk": 15,
     "fields": {
-      "label": "A dish that you never it anymore?",
+      "label": "A dish that you will never eat anymore?",
       "category_id": 1
     }
   },

@@ -1,7 +1,6 @@
 from typing import Any, Optional
 
 from django.contrib.auth.hashers import check_password
-from django.contrib.auth.models import User
 from django.http import QueryDict
 from django.db.models import Q
 from rest_framework import serializers

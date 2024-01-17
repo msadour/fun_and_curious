@@ -18,4 +18,3 @@ class Profile(AbstractBaseUser, PermissionsMixin):
     REQUIRED_FIELDS = ['username', 'password', 'is_staff']
 
     USERNAME_FIELD = "email"
-

@@ -5,12 +5,12 @@ from django.contrib.auth.models import PermissionsMixin
 
 
 class Profile(AbstractBaseUser, PermissionsMixin):
-    email = models.EmailField(max_length=255, unique=True)
-    username = models.CharField(max_length=255, unique=True)
-    first_name = models.CharField(max_length=255, blank=True)
-    last_name = models.CharField(max_length=255, blank=True)
-    country = models.CharField(max_length=255, blank=True)
-    city = models.CharField(max_length=255, blank=True)
+    email = models.EmailField(max_length=255, unique=True, blank=False, null=False)
+    username = models.CharField(max_length=255, unique=True, blank=False, null=False)
+    first_name = models.CharField(max_length=255, blank=False, null=True)
+    last_name = models.CharField(max_length=255, blank=False, null=True)
+    country = models.CharField(max_length=255, blank=False, null=True)
+    city = models.CharField(max_length=255, blank=False, null=True)
     is_staff = models.BooleanField(default=False)
 
     objects = UserManager()

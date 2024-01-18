@@ -5,7 +5,18 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.response import Response
 
-from app.endpoints.authentication.serializers import AuthTokenSerializer
+from app.endpoints.authentication.serializers import AuthTokenSerializer, SignUpSerializer
+
+
+class SignUpViewSet(viewsets.ModelViewSet):
+
+    def create(self, request, *args, **kwargs) -> Response:
+        try:
+            SignUpSerializer().create(validated_data=request.data)
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        return Response({"message": "Account created"}, status=status.HTTP_201_CREATED)
 
 
 class CustomAuthTokenView(ObtainAuthToken):
@@ -14,7 +25,7 @@ class CustomAuthTokenView(ObtainAuthToken):
     permission_classes: tuple = (permissions.AllowAny,)
 
     def post(self, request, *args, **kwargs) -> Response:
-        serializer: AuthTokenSerializer = AuthTokenSerializer()
+        serializer = AuthTokenSerializer()
         user_logged: AbstractBaseUser = serializer.validate(attrs=request.data)
         request.user = user_logged
         return Response(data={"token": request.user.auth_token.key}, status=201)

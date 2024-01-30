@@ -9,7 +9,7 @@ from app.endpoints.question.serializers import QuestionSerializer
 from app.endpoints.user_profile.models import Profile
 
 
-def generate_default_game(label: str, author: Optional[Profile] = None) -> list:
+def generate_game(label: str, author: Optional[Profile] = None) -> list:
 
     category_ids: list = [
         cat.id for cat in Category.objects.all() if cat.question_set.count() > 3

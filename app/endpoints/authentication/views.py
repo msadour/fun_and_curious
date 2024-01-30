@@ -16,9 +16,11 @@ class SignUpViewSet(viewsets.ModelViewSet):
         try:
             SignUpSerializer().create(validated_data=request.data)
         except Exception as e:
-            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(data={"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
-        return Response({"message": "Account created"}, status=status.HTTP_201_CREATED)
+        return Response(
+            data={"message": "Account created"}, status=status.HTTP_201_CREATED
+        )
 
 
 class CustomAuthTokenView(ObtainAuthToken):

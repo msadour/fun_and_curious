@@ -1,9 +1,12 @@
 from rest_framework import status, viewsets
-from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 
 from app.endpoints.user_profile.models import Profile
-from app.endpoints.user_profile.serializers import ProfileSerializer, ProfileListSerializer
+from app.endpoints.user_profile.serializers import (
+    ProfileListSerializer,
+    ProfileSerializer,
+)
 
 
 class ManageProfileViewSet(viewsets.ViewSet):
@@ -25,6 +28,6 @@ class ManageProfileViewSet(viewsets.ViewSet):
     def retrieve(self, request):
         pass
 
-    def destroy(self, request):
-        pass
-
+    def delete(self, request):
+        Profile.objects.filter(id=request.user.id).delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

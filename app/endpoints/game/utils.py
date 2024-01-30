@@ -19,7 +19,10 @@ def generate_default_game(label: str, author: Optional[Profile] = None) -> list:
         id__in=random_category_ids
     )
 
-    new_game = Game.objects.create(label=label, author=author)
+    new_game = Game.objects.create(label=label)
+    if author:
+        new_game.author = author
+        new_game.save()
 
     questions: list = []
     for category in randoms_categories:

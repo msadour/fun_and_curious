@@ -1,6 +1,6 @@
 from django.db import models
 
-from app.endpoints.question.models import Question, Category
+from app.endpoints.question.models import Category, Question
 from app.endpoints.user_profile.models import Profile
 
 

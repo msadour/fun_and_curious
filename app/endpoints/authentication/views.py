@@ -13,11 +13,7 @@ from app.endpoints.authentication.serializers import (
 
 class SignUpViewSet(viewsets.ModelViewSet):
     def create(self, request, *args, **kwargs) -> Response:
-        try:
-            SignUpSerializer().create(validated_data=request.data)
-        except Exception as e:
-            return Response(data={"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
+        SignUpSerializer().create(validated_data=request.data)
         return Response(
             data={"message": "Account created"}, status=status.HTTP_201_CREATED
         )

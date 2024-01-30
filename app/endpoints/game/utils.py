@@ -45,10 +45,11 @@ def generate_default_game(label: str, author: Optional[Profile] = None) -> list:
             random_question_ids: list = random.sample(question_ids, random_count)
 
         randoms_questions: QuestionSerializer = QuestionSerializer(
-            data=Question.objects.filter(id__in=random_question_ids),
-            many=True
+            data=Question.objects.filter(id__in=random_question_ids), many=True
         )
         randoms_questions.is_valid()
-        questions.append({"category": category.label, "questions": randoms_questions.data})
+        questions.append(
+            {"category": category.label, "questions": randoms_questions.data}
+        )
 
     return questions

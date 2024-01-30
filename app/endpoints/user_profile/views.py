@@ -25,9 +25,6 @@ class ManageProfileViewSet(viewsets.ViewSet):
         profiles = ProfileListSerializer(self.queryset, many=True).data
         return Response(data=profiles, status=status.HTTP_200_OK)
 
-    def retrieve(self, request):
-        pass
-
     def delete(self, request):
         Profile.objects.filter(id=request.user.id).delete()
         return Response(status=status.HTTP_204_NO_CONTENT)

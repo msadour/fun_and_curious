@@ -1,14 +1,20 @@
-from typing import Any, Optional
 import re
+from typing import Any, Optional
 
 from django.contrib.auth.hashers import check_password
-from django.http import QueryDict
 from django.db.models import Q
+from django.http import QueryDict
 from rest_framework import serializers
 from rest_framework.authtoken.models import Token
 
 from app.endpoints.user_profile.models import Profile
-from app.layer.exception import AuthenticationError, EmailError, UsernameError, ProfileAlreadyExistsError, PasswordError
+from app.layer.exception import (
+    AuthenticationError,
+    EmailError,
+    PasswordError,
+    ProfileAlreadyExistsError,
+    UsernameError,
+)
 
 
 class AuthTokenSerializer(serializers.Serializer):
@@ -41,7 +47,9 @@ class AuthTokenSerializer(serializers.Serializer):
         username: str = attrs.get("username")
         email: str = attrs.get("email")
         password: str = attrs.get("password")
-        profile: Optional[Profile] = self.authenticate_user(username=username, email=email, password=password)
+        profile: Optional[Profile] = self.authenticate_user(
+            username=username, email=email, password=password
+        )
         token, created = Token.objects.get_or_create(user=profile)
         profile.auth_token = token
 
@@ -51,8 +59,8 @@ class AuthTokenSerializer(serializers.Serializer):
 class SignUpSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = ['email', 'username', 'password']
-        extra_kwargs = {'password': {'write_only': True}}
+        fields = ["email", "username", "password"]
+        extra_kwargs = {"password": {"write_only": True}}
 
     def create(self, validated_data):
         email = validated_data.get("email")
@@ -65,9 +73,13 @@ class SignUpSerializer(serializers.ModelSerializer):
         if username is None or len(username) < 3:
             raise UsernameError("Username is too short (at least 3 letters)")
 
-        check_existing_profile = Profile.objects.filter(Q(username=username) | Q(email=email)).first()
+        check_existing_profile = Profile.objects.filter(
+            Q(username=username) | Q(email=email)
+        ).first()
         if check_existing_profile:
-            raise ProfileAlreadyExistsError("A profile with this email/username already exists")
+            raise ProfileAlreadyExistsError(
+                "A profile with this email/username already exists"
+            )
 
         password = validated_data.get("password")
         if password is None or len(password) < 5:

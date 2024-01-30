@@ -1,7 +1,6 @@
-from django.db import models
-from django.contrib.auth.models import UserManager
 from django.contrib.auth.base_user import AbstractBaseUser
-from django.contrib.auth.models import PermissionsMixin
+from django.contrib.auth.models import PermissionsMixin, UserManager
+from django.db import models
 
 
 class Profile(AbstractBaseUser, PermissionsMixin):
@@ -15,6 +14,6 @@ class Profile(AbstractBaseUser, PermissionsMixin):
 
     objects = UserManager()
 
-    REQUIRED_FIELDS = ['username', 'password', 'is_staff']
+    REQUIRED_FIELDS = ["username", "password", "is_staff"]
 
     USERNAME_FIELD = "email"

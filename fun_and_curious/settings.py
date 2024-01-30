@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "app.endpoints.game.apps.GameConfig",
     "app.endpoints.question.apps.QuestionConfig",
     "app.endpoints.user_profile.apps.UserProfileConfig",
+    "app.endpoints.security.apps.SecurityConfig",
     "rest_framework.authtoken",
 ]
 
@@ -59,6 +60,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "app.middleware.handler_exception.HandleException",
+    "app.middleware.security.CheckIPMiddleware",
 ]
 
 ROOT_URLCONF = "fun_and_curious.urls"

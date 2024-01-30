@@ -81,10 +81,12 @@ TEMPLATES = [
 AUTH_USER_MODEL = "user_profile.Profile"
 
 REST_FRAMEWORK = {
-    "DEFAULT_": [
-        "rest_framework.authentication.TokenAuthentication",
-        "rest_framework.authentication.SessionAuthentication",
-    ]
+   'DEFAULT_AUTHENTICATION_CLASSES': (
+       'rest_framework.authentication.TokenAuthentication',
+   ),
+   'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAdminUser'
+   ),
 }
 
 WSGI_APPLICATION = 'fun_and_curious.wsgi.application'

@@ -9,7 +9,7 @@ from app.layer.exception import EmailError, UsernameError
 class ProfileListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        exclude = ("email", "is_staff")
+        exclude = ("id", "email", "password", "is_staff", "groups", "user_permissions")
 
 
 class ProfileSerializer(serializers.ModelSerializer):

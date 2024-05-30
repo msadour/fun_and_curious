@@ -70,7 +70,7 @@
     "model": "question.Question",
     "pk": 30,
     "fields": {
-      "label": "Big or slim plant?",
+      "label": "Big or slim pant?",
       "category_id": 5
     }
   },
@@ -78,7 +78,7 @@
     "model": "question.Question",
     "pk": 31,
     "fields": {
-      "label": "White sneaker or black sneaker?",
+      "label": "White or black sneaker?",
       "category_id": 5
     }
   },

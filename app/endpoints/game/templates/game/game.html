@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for game in games %}
+        <table>
+            <tr>
+                <th> {{ game.category }} </th>
+            </tr>
+
+            {% for question in game.questions %}
+                <tr>
+                    <td> {{ question.label }} </td>
+                </tr>
+            {% endfor %}
+
+        </table>
+        <br /><br />
+    {% endfor %}
+</body>
+</html>

@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "app.endpoints.authentication.apps.AuthenticationConfig",
     "app.endpoints.game.apps.GameConfig",
-    "app.endpoints.question.apps.QuestionConfig",
     "app.endpoints.user_profile.apps.UserProfileConfig",
     "app.endpoints.security.apps.SecurityConfig",
     "rest_framework.authtoken",

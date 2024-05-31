@@ -1,6 +1,6 @@
 [
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 40,
     "fields": {
       "label": "Drink or eating?",
@@ -9,7 +9,7 @@
   },
 
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 41,
     "fields": {
       "label": "Fish or meat?",
@@ -17,7 +17,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 42,
     "fields": {
       "label": "Wine or beer?",
@@ -25,7 +25,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 43,
     "fields": {
       "label": "Butter or oil?",
@@ -33,7 +33,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 44,
     "fields": {
       "label": "Burger or Döner?",
@@ -41,7 +41,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 45,
     "fields": {
       "label": "McDonald or Burger king?",
@@ -49,7 +49,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 46,
     "fields": {
       "label": "Salt or peper?",
@@ -57,7 +57,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 47,
     "fields": {
       "label": "Rhum or Whisky?",
@@ -65,7 +65,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 48,
     "fields": {
       "label": "A dish which you never stop to eat?",
@@ -73,7 +73,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 49,
     "fields": {
       "label": "Eat outside or cooking?",
@@ -81,7 +81,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 50,
     "fields": {
       "label": "Beef or pork?",
@@ -89,7 +89,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 51,
     "fields": {
       "label": "Pasta or Pizza?",
@@ -97,7 +97,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 52,
     "fields": {
       "label": "Chocolate or caramel?",
@@ -105,7 +105,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 53,
     "fields": {
       "label": "Salad or vegetable?",
@@ -113,7 +113,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 54,
     "fields": {
       "label": "A dish that you will never eat anymore?",
@@ -121,7 +121,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 55,
     "fields": {
       "label": "Cigar? Cigarette or Shisha?",
@@ -129,7 +129,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 56,
     "fields": {
       "label": "Sweety or salty?",
@@ -137,7 +137,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 57,
     "fields": {
       "label": "White or red wine?",
@@ -145,7 +145,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 58,
     "fields": {
       "label": "Cooking or eating?",
@@ -153,7 +153,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 59,
     "fields": {
       "label": "Olive or peanut??",
@@ -161,7 +161,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 60,
     "fields": {
       "label": "Tea or coffee??",
@@ -169,7 +169,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 61,
     "fields": {
       "label": "Salmon or tuna??",

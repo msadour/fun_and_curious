@@ -1,6 +1,6 @@
 [
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 97,
     "fields": {
       "label": "Gym or Yoga?",
@@ -9,7 +9,7 @@
   },
 
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 98,
     "fields": {
       "label": "Running or biking?",
@@ -19,7 +19,7 @@
 
 
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 99,
     "fields": {
       "label": "Individual or collective sport?",
@@ -27,7 +27,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 100,
     "fields": {
       "label": "Sport in the morning or in the evening?",
@@ -35,7 +35,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 101,
     "fields": {
       "label": "Outside or inside?",
@@ -43,7 +43,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 102,
     "fields": {
       "label": "A sport what you never want to do?",
@@ -51,7 +51,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 103,
     "fields": {
       "label": "A sport which make you happy?",
@@ -59,7 +59,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 104,
     "fields": {
       "label": "A sport which you like to watch?",
@@ -67,7 +67,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 105,
     "fields": {
       "label": "Improve yourself or surpass others?",
@@ -75,7 +75,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 106,
     "fields": {
       "label": "Football or volleyball?",
@@ -83,7 +83,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 107,
     "fields": {
       "label": "Boxing or dancing?",
@@ -91,7 +91,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 108,
     "fields": {
       "label": "Normal sport or 'bed sport'?",
@@ -99,7 +99,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 109,
     "fields": {
       "label": "Swimming or hiking?",

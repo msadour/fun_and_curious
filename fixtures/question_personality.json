@@ -1,6 +1,6 @@
 [
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 80,
     "fields": {
       "label": "Introvert or extravert?",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 81,
     "fields": {
       "label": "Rational or emotional?",
@@ -18,7 +18,7 @@
 
 
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 82,
     "fields": {
       "label": "Direct or diplomat?",
@@ -26,7 +26,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 83,
     "fields": {
       "label": "Calm or impulsive?",
@@ -34,7 +34,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 84,
     "fields": {
       "label": "Solitary or well surrounded?",
@@ -42,7 +42,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 85,
     "fields": {
       "label": "Friendly or distant?",
@@ -50,7 +50,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 86,
     "fields": {
       "label": "Talkative or quiet?",
@@ -58,7 +58,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 87,
     "fields": {
       "label": "Something that make you happy?",
@@ -66,7 +66,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 88,
     "fields": {
       "label": "Something that make you angry?",
@@ -74,7 +74,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 89,
     "fields": {
       "label": "Leading or following?",
@@ -82,7 +82,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 90,
     "fields": {
       "label": "Passive or pro-active?",
@@ -90,7 +90,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 91,
     "fields": {
       "label": "Which country do you like the personality (people)?",
@@ -98,7 +98,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 92,
     "fields": {
       "label": "Past? Present or future?",
@@ -106,7 +106,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 93,
     "fields": {
       "label": "A song which represents you?",
@@ -114,7 +114,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 94,
     "fields": {
       "label": "To think or to act?",
@@ -122,7 +122,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 95,
     "fields": {
       "label": "Facebook or Instagram?",
@@ -130,7 +130,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 96,
     "fields": {
       "label": "Homebody or walker?",

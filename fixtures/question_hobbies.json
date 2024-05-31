@@ -1,6 +1,6 @@
 [
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 62,
     "fields": {
       "label": "Movie or series?",
@@ -9,7 +9,7 @@
   },
 
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 63,
     "fields": {
       "label": "Sport or beer?",
@@ -19,7 +19,7 @@
 
 
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 64,
     "fields": {
       "label": "A song you could listen to on a loop?",
@@ -27,7 +27,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 65,
     "fields": {
       "label": "Cinema or TV?",
@@ -35,7 +35,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 66,
     "fields": {
       "label": "Read or write?",
@@ -43,7 +43,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 67,
     "fields": {
       "label": "The last book you read?",
@@ -51,7 +51,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 68,
     "fields": {
       "label": "Guitar or piano?",
@@ -59,7 +59,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 69,
     "fields": {
       "label": "Rap or Rock?",
@@ -67,7 +67,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 70,
     "fields": {
       "label": "Dance or Sing?",
@@ -75,7 +75,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 71,
     "fields": {
       "label": "Conference or podcast?",

@@ -1,6 +1,6 @@
 [
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 110,
     "fields": {
       "label": "Plane or train?",
@@ -9,7 +9,7 @@
   },
 
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 111,
     "fields": {
       "label": "See or mountain?",
@@ -17,7 +17,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 112,
     "fields": {
       "label": "Nature or city?",
@@ -25,7 +25,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 113,
     "fields": {
       "label": "Italy or Spain?",
@@ -33,7 +33,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 114,
     "fields": {
       "label": "Alone or with friends/family?",
@@ -41,7 +41,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 115,
     "fields": {
       "label": "Paris or London?",
@@ -49,7 +49,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 116,
     "fields": {
       "label": "Backpack or suitcase?",
@@ -57,7 +57,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 117,
     "fields": {
       "label": "New city or old city?",
@@ -65,7 +65,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 118,
     "fields": {
       "label": "Cold country or warm country?",
@@ -73,7 +73,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 119,
     "fields": {
       "label": "Short or long trip?",
@@ -81,7 +81,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 120,
     "fields": {
       "label": "Lake or ocean?",
@@ -89,7 +89,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 121,
     "fields": {
       "label": "A country you want to visit?",
@@ -97,7 +97,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 122,
     "fields": {
       "label": "A country you never visit?",
@@ -105,7 +105,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 123,
     "fields": {
       "label": "Small town or big town?",
@@ -113,7 +113,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 124,
     "fields": {
       "label": "Dubai or Marrakech?",

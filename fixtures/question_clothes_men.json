@@ -1,6 +1,6 @@
 [
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 9,
     "fields": {
       "label": "Pant or jean?",
@@ -9,7 +9,7 @@
   },
 
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 10,
     "fields": {
       "label": "Shoes or sneakers?",
@@ -17,7 +17,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 11,
     "fields": {
       "label": "Backpack or bag?",
@@ -25,7 +25,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 12,
     "fields": {
       "label": "Onsite or online shopping?",
@@ -33,7 +33,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 13,
     "fields": {
       "label": "Sportswear or chic?",
@@ -41,7 +41,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 14,
     "fields": {
       "label": "Casual or punk?",
@@ -49,7 +49,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 15,
     "fields": {
       "label": "Color or back/white?",
@@ -57,7 +57,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 16,
     "fields": {
       "label": "Watch or bracelet?",
@@ -65,7 +65,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 17,
     "fields": {
       "label": "Big or slim pant?",
@@ -73,7 +73,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 18,
     "fields": {
       "label": "White or black sneaker?",
@@ -81,7 +81,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 19,
     "fields": {
       "label": "Nike or Addidas?",
@@ -89,7 +89,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 20,
     "fields": {
       "label": "Perfume or eau de toilette?",
@@ -97,7 +97,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 21,
     "fields": {
       "label": "A style which you love?",
@@ -105,7 +105,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 22,
     "fields": {
       "label": "A style which you don't like?",
@@ -113,7 +113,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 23,
     "fields": {
       "label": "The perfect dress for a date?",
@@ -121,7 +121,7 @@
     }
   },
     {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 24,
     "fields": {
       "label": "A woman Shirt with flower? Check shirt? or plain shirt?",

@@ -1,6 +1,6 @@
 from django.core.management import BaseCommand, call_command
 
-from app.endpoints.question.models import Category, Question
+from app.endpoints.game.models import Category, Question
 from app.endpoints.user_profile.models import Profile
 
 

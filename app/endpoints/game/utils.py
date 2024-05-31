@@ -5,9 +5,8 @@ import pdfkit
 from django.db.models.query import QuerySet
 from django.shortcuts import render
 
-from app.endpoints.game.models import Game
-from app.endpoints.question.models import Category, Question
-from app.endpoints.question.serializers import QuestionSerializer
+from app.endpoints.game.models import Category, Game, Question
+from app.endpoints.game.serializers import QuestionSerializer
 from app.endpoints.user_profile.models import Profile
 
 

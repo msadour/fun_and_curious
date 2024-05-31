@@ -1,6 +1,6 @@
 [
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 72,
     "fields": {
       "label": "Phone or computer?",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 73,
     "fields": {
       "label": "Android or Samsung?",
@@ -16,7 +16,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 74,
     "fields": {
       "label": "Bike or car?",
@@ -24,7 +24,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 75,
     "fields": {
       "label": "Lucky charm?",
@@ -32,7 +32,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 76,
     "fields": {
       "label": "Watch or bracelet?",
@@ -40,7 +40,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 77,
     "fields": {
       "label": "Headphone or AirPods?",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 78,
     "fields": {
       "label": "Smartphone or tablet?",
@@ -56,7 +56,7 @@
     }
   },
   {
-    "model": "question.Question",
+    "model": "game.Question",
     "pk": 79,
     "fields": {
       "label": "Something that you must always have with you outside?",

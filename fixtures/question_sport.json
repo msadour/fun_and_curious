@@ -1,7 +1,7 @@
 [
   {
     "model": "question.Question",
-    "pk": 76,
+    "pk": 97,
     "fields": {
       "label": "Gym or Yoga?",
       "category_id": 2
@@ -10,7 +10,7 @@
 
     {
     "model": "question.Question",
-    "pk": 77,
+    "pk": 98,
     "fields": {
       "label": "Running or biking?",
       "category_id": 2
@@ -20,7 +20,7 @@
 
     {
     "model": "question.Question",
-    "pk": 78,
+    "pk": 99,
     "fields": {
       "label": "Individual or collective sport?",
       "category_id": 2
@@ -28,7 +28,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 79,
+    "pk": 100,
     "fields": {
       "label": "Sport in the morning or in the evening?",
       "category_id": 2
@@ -36,7 +36,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 80,
+    "pk": 101,
     "fields": {
       "label": "Outside or inside?",
       "category_id": 2
@@ -44,7 +44,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 81,
+    "pk": 102,
     "fields": {
       "label": "A sport what you never want to do?",
       "category_id": 2
@@ -52,7 +52,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 82,
+    "pk": 103,
     "fields": {
       "label": "A sport which make you happy?",
       "category_id": 2
@@ -60,7 +60,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 83,
+    "pk": 104,
     "fields": {
       "label": "A sport which you like to watch?",
       "category_id": 2
@@ -68,7 +68,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 84,
+    "pk": 105,
     "fields": {
       "label": "Improve yourself or surpass others?",
       "category_id": 2
@@ -76,7 +76,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 85,
+    "pk": 106,
     "fields": {
       "label": "Football or volleyball?",
       "category_id": 2
@@ -84,7 +84,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 86,
+    "pk": 107,
     "fields": {
       "label": "Boxing or dancing?",
       "category_id": 2
@@ -92,7 +92,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 87,
+    "pk": 108,
     "fields": {
       "label": "Normal sport or 'bed sport'?",
       "category_id": 2
@@ -100,7 +100,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 88,
+    "pk": 109,
     "fields": {
       "label": "Swimming or hiking?",
       "category_id": 2

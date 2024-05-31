@@ -1,7 +1,7 @@
 [
   {
     "model": "question.Question",
-    "pk": 37,
+    "pk": 62,
     "fields": {
       "label": "Movie or series?",
       "category_id": 13
@@ -10,7 +10,7 @@
 
     {
     "model": "question.Question",
-    "pk": 38,
+    "pk": 63,
     "fields": {
       "label": "Sport or beer?",
       "category_id": 13
@@ -20,7 +20,7 @@
 
     {
     "model": "question.Question",
-    "pk": 39,
+    "pk": 64,
     "fields": {
       "label": "A song you could listen to on a loop?",
       "category_id": 13
@@ -28,7 +28,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 40,
+    "pk": 65,
     "fields": {
       "label": "Cinema or TV?",
       "category_id": 13
@@ -36,7 +36,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 41,
+    "pk": 66,
     "fields": {
       "label": "Read or write?",
       "category_id": 13
@@ -44,7 +44,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 42,
+    "pk": 67,
     "fields": {
       "label": "The last book you read?",
       "category_id": 13
@@ -52,7 +52,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 43,
+    "pk": 68,
     "fields": {
       "label": "Guitar or piano?",
       "category_id": 13
@@ -60,7 +60,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 44,
+    "pk": 69,
     "fields": {
       "label": "Rap or Rock?",
       "category_id": 13
@@ -68,7 +68,7 @@
   },
   {
     "model": "question.Question",
-    "pk": 45,
+    "pk": 70,
     "fields": {
       "label": "Dance or Sing?",
       "category_id": 13
@@ -76,7 +76,7 @@
   },
   {
     "model": "question.Question",
-    "pk": 46,
+    "pk": 71,
     "fields": {
       "label": "Conference or podcast?",
       "category_id": 13

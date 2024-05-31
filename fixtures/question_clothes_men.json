@@ -1,7 +1,7 @@
 [
   {
     "model": "question.Question",
-    "pk": 1,
+    "pk": 9,
     "fields": {
       "label": "Pant or jean?",
       "category_id": 16
@@ -10,7 +10,7 @@
 
   {
     "model": "question.Question",
-    "pk": 2,
+    "pk": 10,
     "fields": {
       "label": "Shoes or sneakers?",
       "category_id": 16
@@ -18,7 +18,7 @@
   },
   {
     "model": "question.Question",
-    "pk": 3,
+    "pk": 11,
     "fields": {
       "label": "Backpack or bag?",
       "category_id": 16
@@ -26,15 +26,15 @@
   },
     {
     "model": "question.Question",
-    "pk": 4,
+    "pk": 12,
     "fields": {
-      "label": "Shopping or online?",
+      "label": "Onsite or online shopping?",
       "category_id": 16
     }
   },
     {
     "model": "question.Question",
-    "pk": 5,
+    "pk": 13,
     "fields": {
       "label": "Sportswear or chic?",
       "category_id": 16
@@ -42,7 +42,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 6,
+    "pk": 14,
     "fields": {
       "label": "Casual or punk?",
       "category_id": 16
@@ -50,7 +50,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 7,
+    "pk": 15,
     "fields": {
       "label": "Color or back/white?",
       "category_id": 16
@@ -58,7 +58,7 @@
   },
     {
     "model": "question.Question",
-    "pk": 8,
+    "pk": 16,
     "fields": {
       "label": "Watch or bracelet?",
       "category_id": 16
@@ -66,23 +66,23 @@
   },
     {
     "model": "question.Question",
-    "pk": 9,
+    "pk": 17,
     "fields": {
-      "label": "Big or slim plant?",
+      "label": "Big or slim pant?",
       "category_id": 16
     }
   },
     {
     "model": "question.Question",
-    "pk": 10,
+    "pk": 18,
     "fields": {
-      "label": "White sneaker or black sneaker?",
+      "label": "White or black sneaker?",
       "category_id": 16
     }
   },
     {
     "model": "question.Question",
-    "pk": 11,
+    "pk": 19,
     "fields": {
       "label": "Nike or Addidas?",
       "category_id": 16
@@ -90,7 +90,7 @@
   },
   {
     "model": "question.Question",
-    "pk": 12,
+    "pk": 20,
     "fields": {
       "label": "Perfume or eau de toilette?",
       "category_id": 16
@@ -98,7 +98,7 @@
   },
   {
     "model": "question.Question",
-    "pk": 13,
+    "pk": 21,
     "fields": {
       "label": "A style which you love?",
       "category_id": 16
@@ -106,7 +106,7 @@
   },
   {
     "model": "question.Question",
-    "pk": 14,
+    "pk": 22,
     "fields": {
       "label": "A style which you don't like?",
       "category_id": 16
@@ -114,7 +114,7 @@
   },
   {
     "model": "question.Question",
-    "pk": 15,
+    "pk": 23,
     "fields": {
       "label": "The perfect dress for a date?",
       "category_id": 16
@@ -122,9 +122,9 @@
   },
     {
     "model": "question.Question",
-    "pk": 16,
+    "pk": 24,
     "fields": {
-      "label": "Shirt with flower? Check shirt? or plain shirt?",
+      "label": "A woman Shirt with flower? Check shirt? or plain shirt?",
       "category_id": 16
     }
   }

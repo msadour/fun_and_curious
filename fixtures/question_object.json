@@ -1,16 +1,15 @@
 [
   {
     "model": "question.Question",
-    "pk": 56,
+    "pk": 72,
     "fields": {
       "label": "Phone or computer?",
       "category_id": 14
     }
   },
-
-    {
+  {
     "model": "question.Question",
-    "pk": 57,
+    "pk": 73,
     "fields": {
       "label": "Android or Samsung?",
       "category_id": 14
@@ -18,9 +17,49 @@
   },
   {
     "model": "question.Question",
-    "pk": 58,
+    "pk": 74,
     "fields": {
       "label": "Bike or car?",
+      "category_id": 14
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 75,
+    "fields": {
+      "label": "Lucky charm?",
+      "category_id": 14
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 76,
+    "fields": {
+      "label": "Watch or bracelet?",
+      "category_id": 14
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 77,
+    "fields": {
+      "label": "Headphone or AirPods?",
+      "category_id": 14
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 78,
+    "fields": {
+      "label": "Smartphone or tablet?",
+      "category_id": 14
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 79,
+    "fields": {
+      "label": "Something that you must always have with you outside?",
       "category_id": 14
     }
   }

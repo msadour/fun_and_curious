@@ -1,7 +1,7 @@
 [
   {
     "model": "question.Question",
-    "pk": 17,
+    "pk": 1,
     "fields": {
       "label": "Cat or dog?",
       "category_id": 12
@@ -9,7 +9,7 @@
   },
   {
     "model": "question.Question",
-    "pk": 18,
+    "pk": 2,
     "fields": {
       "label": "Which animals terrify you?",
       "category_id": 12
@@ -17,15 +17,15 @@
   },
   {
     "model": "question.Question",
-    "pk": 19,
+    "pk": 3,
     "fields": {
-      "label": "The best pet?",
+      "label": "The best pet to have at home?",
       "category_id": 12
     }
   },
   {
     "model": "question.Question",
-    "pk": 20,
+    "pk": 4,
     "fields": {
       "label": "The animal you would love to have and haven't seen yet?",
       "category_id": 12
@@ -33,9 +33,33 @@
   },
   {
     "model": "question.Question",
-    "pk": 21,
+    "pk": 5,
     "fields": {
       "label": "Insects or snakes?",
+      "category_id": 12
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 6,
+    "fields": {
+      "label": "Lion or tigers?",
+      "category_id": 12
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 7,
+    "fields": {
+      "label": "Any pet?",
+      "category_id": 12
+    }
+  },
+  {
+    "model": "question.Question",
+    "pk": 8,
+    "fields": {
+      "label": "The cutest animals you saw in your life?",
       "category_id": 12
     }
   }

@@ -17,7 +17,7 @@ class RandomQuestionsViewSet(viewsets.ViewSet):
             if current_user.is_anonymous
             else generate_game(label=label, author=current_user)
         )
-        create_pdf(request, data={"games": game_created})
+        create_pdf(request, data={"games": game_created, "label": label})
         url_file = str(Path(__file__).parents[3]) + "\\result.pdf"
         if not os.path.exists(url_file):
             raise Http404

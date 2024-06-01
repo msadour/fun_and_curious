@@ -7,7 +7,7 @@ from django.http import QueryDict
 from rest_framework import serializers
 from rest_framework.authtoken.models import Token
 
-from app.endpoints.user_profile.models import Profile
+from app.core.user_profile.models import Profile
 from app.layer.exception import (
     AuthenticationError,
     EmailError,

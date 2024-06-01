@@ -5,10 +5,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.response import Response
 
-from app.endpoints.authentication.serializers import (
-    AuthTokenSerializer,
-    SignUpSerializer,
-)
+from app.core.authentication.serializers import AuthTokenSerializer, SignUpSerializer
 
 
 class SignUpViewSet(viewsets.ModelViewSet):

@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 from rest_framework.request import Request
 
-from app.endpoints.security.models import IPBanned
+from app.core.security.models import IPBanned
 
 
 class CheckIPMiddleware:

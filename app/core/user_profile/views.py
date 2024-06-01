@@ -2,11 +2,8 @@ from rest_framework import status, viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from app.endpoints.user_profile.models import Profile
-from app.endpoints.user_profile.serializers import (
-    ProfileListSerializer,
-    ProfileSerializer,
-)
+from app.core.user_profile.models import Profile
+from app.core.user_profile.serializers import ProfileListSerializer, ProfileSerializer
 
 
 class ManageProfileViewSet(viewsets.ViewSet):

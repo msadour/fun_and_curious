@@ -1,6 +1,6 @@
 from django.db import models
 
-from app.endpoints.user_profile.models import Profile
+from app.core.user_profile.models import Profile
 
 
 class Category(models.Model):

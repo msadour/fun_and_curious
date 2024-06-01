@@ -5,7 +5,7 @@ from django.http import Http404, HttpResponse
 from rest_framework import viewsets
 from rest_framework.request import Request
 
-from app.endpoints.game.utils import create_pdf, generate_game
+from app.core.game.utils import create_pdf, generate_game
 
 
 class RandomQuestionsViewSet(viewsets.ViewSet):

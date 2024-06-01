@@ -43,10 +43,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "app.endpoints.authentication.apps.AuthenticationConfig",
-    "app.endpoints.game.apps.GameConfig",
-    "app.endpoints.user_profile.apps.UserProfileConfig",
-    "app.endpoints.security.apps.SecurityConfig",
+    "app.core.authentication.apps.AuthenticationConfig",
+    "app.core.game.apps.GameConfig",
+    "app.core.user_profile.apps.UserProfileConfig",
+    "app.core.security.apps.SecurityConfig",
     "rest_framework.authtoken",
 ]
 

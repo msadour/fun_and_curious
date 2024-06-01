@@ -2,7 +2,7 @@ import re
 
 from rest_framework import serializers
 
-from app.endpoints.user_profile.models import Profile
+from app.core.user_profile.models import Profile
 from app.layer.exception import EmailError, UsernameError
 
 

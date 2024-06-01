@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from app.endpoints.game.models import Question
+from app.core.game.models import Question
 
 
 class QuestionSerializer(serializers.ModelSerializer):

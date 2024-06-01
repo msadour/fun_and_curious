@@ -5,9 +5,9 @@ import pdfkit
 from django.db.models.query import QuerySet
 from django.shortcuts import render
 
-from app.endpoints.game.models import Category, Game, Question
-from app.endpoints.game.serializers import QuestionSerializer
-from app.endpoints.user_profile.models import Profile
+from app.core.game.models import Category, Game, Question
+from app.core.game.serializers import QuestionSerializer
+from app.core.user_profile.models import Profile
 
 
 def generate_game(label: str, author: Optional[Profile] = None) -> list:

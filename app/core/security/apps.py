@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AuthenticationConfig(AppConfig):
+class SecurityConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "app.endpoints.authentication"
+    name = "app.core.security"

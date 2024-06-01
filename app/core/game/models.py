@@ -18,7 +18,9 @@ class Question(models.Model):
 
 class Game(models.Model):
     label = models.CharField(max_length=255, null=False, blank=False)
-    author = models.ForeignKey(Profile, on_delete=models.CASCADE, null=True)
+    author = models.ForeignKey(
+        Profile, on_delete=models.CASCADE, null=True, related_name="games"
+    )
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
 
     objects = models.Manager()

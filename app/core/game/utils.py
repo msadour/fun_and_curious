@@ -1,9 +1,7 @@
 import random
-from typing import Dict, Optional
+from typing import Optional
 
-import pdfkit
 from django.db.models.query import QuerySet
-from django.shortcuts import render
 
 from app.core.game.models import Category, Game, Question
 from app.core.game.serializers import QuestionSerializer
@@ -41,13 +39,3 @@ def generate_game(label: str, author: Optional[Profile] = None) -> list:
         )
 
     return questions
-
-
-def create_pdf(request, data) -> Dict:
-    html_game = render(request, "game/game.html", data).content.decode()
-    file_name = "result.pdf"
-    config = pdfkit.configuration(
-        wkhtmltopdf=r"C:\Program Files\wkhtmltopdf\\bin\wkhtmltopdf.exe"
-    )
-    pdfkit.from_string(html_game, file_name, configuration=config)
-    return {"file_name": file_name}

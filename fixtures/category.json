@@ -31,7 +31,8 @@
     "model": "game.Category",
     "pk": 5,
     "fields": {
-      "label": "Clothes woman"
+      "label": "Clothes woman",
+      "gender": "Female"
     }
   },
   {
@@ -73,7 +74,8 @@
     "model": "game.Category",
     "pk": 16,
     "fields": {
-      "label": "Clothes men"
+      "label": "Clothes men",
+      "gender": "Male"
     }
   }
 ]

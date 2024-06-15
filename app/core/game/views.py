@@ -1,6 +1,6 @@
 import os
-from pathlib import Path
 
+from django.conf import settings
 from django.http import Http404, HttpResponse
 from rest_framework import viewsets
 from rest_framework.request import Request
@@ -13,11 +13,12 @@ class RandomQuestionsViewSet(viewsets.ViewSet):
     def create(self, request: Request) -> HttpResponse:
         current_user = request.user
         label: str = request.data.get("label")
+        gender: str = request.data.get("gender")
 
         game_created = (
-            generate_game(label=label)
+            generate_game(label=label, gender=gender)
             if current_user.is_anonymous
-            else generate_game(label=label, author=current_user)
+            else generate_game(label=label, author=current_user, gender=gender)
         )
         create_pdf(
             request,
@@ -25,7 +26,7 @@ class RandomQuestionsViewSet(viewsets.ViewSet):
             template="game/game.html",
         )
 
-        url_file = str(Path(__file__).parents[3]) + "\\result.pdf"
+        url_file = str(settings.BASE_DIR) + "\\result.pdf"
         if not os.path.exists(url_file):
             raise Http404
         else:

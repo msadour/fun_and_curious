@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    {% for game in games %}
+
+        <h1>{{ game.label }} created at {{ game.created_at }}</h1>
+
+        {% for game_data in game.content %}
+            <table>
+                <tr>
+                    <th> {{ game_data.category }} </th>
+                </tr>
+
+                {% for question in game_data.questions %}
+                    <tr>
+                        <td> {{ question.label }} </td>
+                    </tr>
+                {% endfor %}
+
+            </table>
+            <br /><br />
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>

@@ -6,6 +6,7 @@ from app.core.game.models import Game
 from app.core.game.serializers import GameSerializer
 from app.core.user_profile.models import Profile
 from app.core.user_profile.serializers import ProfileListSerializer, ProfileSerializer
+from app.layer.utils import build_response, create_pdf
 
 
 class ManageProfileViewSet(viewsets.ViewSet):
@@ -37,4 +38,11 @@ class GameProfileViewSet(viewsets.ViewSet):
     def list(self, request):
         games_filtered = Game.objects.filter(author=request.user)
         games = GameSerializer(games_filtered, many=True).data
-        return Response(data=games, status=status.HTTP_200_OK)
+        file_name = "my_games.pdf"
+        create_pdf(
+            request=request,
+            data={"games": games},
+            template="game/games.html",
+            file_name=file_name,
+        )
+        return build_response(file_name=file_name)

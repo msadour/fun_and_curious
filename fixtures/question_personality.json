@@ -15,9 +15,7 @@
       "category_id": 4
     }
   },
-
-
-    {
+  {
     "model": "game.Question",
     "pk": 82,
     "fields": {

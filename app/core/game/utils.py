@@ -9,10 +9,7 @@ from app.core.game.serializers import QuestionSerializer
 from app.core.user_profile.models import Profile
 
 
-# TODO : Handling sensitive question for interview
-def generate_game(
-    label: str, author: Optional[Profile] = None, gender: Optional[str] = None
-) -> list:
+def get_random_categories(gender: str) -> QuerySet[Category]:
     categories = Category.objects.annotate(total_questions=Count("questions")).filter(
         total_questions__gte=5
     )
@@ -21,29 +18,52 @@ def generate_game(
     elif gender == "Female":
         categories = categories.exclude(gender="Male")
 
-    category_ids: list = [cat.id for cat in categories]
+    category_ids: list = sorted(categories.values_list("id", flat=True))
     random_category_ids: list = random.sample(category_ids, 6)
     randoms_categories: QuerySet[Category] = Category.objects.filter(
         id__in=random_category_ids
     )
+    return randoms_categories
 
+
+def create_game(label: str, author: Optional[Profile]):
     new_game = Game.objects.create(label=label)
     if author:
         new_game.author = author
         new_game.save()
 
+
+def get_filtered_random_question_ids(category: Category, only_soft: bool) -> list:
+    question_ids = Question.objects.filter(category=category).values_list(
+        "id", flat=True
+    )
+    if only_soft and only_soft is True:
+        question_ids = question_ids.exclude(is_soft=False)
+    question_ids = sorted(question_ids)
+    minimum_number_questions = 4 if len(question_ids) >= 4 else len(question_ids)
+    random_length = random.randint(minimum_number_questions, 8)
+    random_question_ids: list = random.sample(question_ids, random_length)
+    return random_question_ids
+
+
+def generate_game(
+    label: str,
+    author: Optional[Profile] = None,
+    gender: Optional[str] = None,
+    only_soft: bool = True,
+) -> list:
+    create_game(label=label, author=author)
+
+    randoms_categories: QuerySet[Category] = get_random_categories(gender=gender)
     questions = []
     for category in randoms_categories:
-        question_ids = [
-            question.id for question in Question.objects.filter(category=category)
-        ]
-        random_count = random.randint(5, 8)
-        random_question_ids: list = random.sample(question_ids, random_count)
+        random_question_ids = get_filtered_random_question_ids(
+            category=category, only_soft=only_soft
+        )
         randoms_questions: QuestionSerializer = QuestionSerializer(
             data=Question.objects.filter(id__in=random_question_ids), many=True
         )
         randoms_questions.is_valid()
-
         questions.append(
             {"category": category.label, "questions": randoms_questions.data}
         )

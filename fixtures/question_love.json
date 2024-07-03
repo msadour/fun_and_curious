@@ -3,8 +3,9 @@
     "model": "question.Question",
     "pk": 47,
     "fields": {
-      "label": "Romantic or rationalist?",
-      "category_id": 7
+      "label": "Romantic or rational?",
+      "category_id": 7,
+      "is_soft": false
     }
   },
 
@@ -13,7 +14,8 @@
     "pk": 48,
     "fields": {
       "label": "Cuddling or distant?",
-      "category_id": 7
+      "category_id": 7,
+      "is_soft": false
     }
   },
   {
@@ -21,7 +23,8 @@
     "pk": 49,
     "fields": {
       "label": "Kissing or massage?",
-      "category_id": 7
+      "category_id": 7,
+      "is_soft": false
     }
   },
     {
@@ -53,7 +56,8 @@
     "pk": 53,
     "fields": {
       "label": "Something that you cannot forgive?",
-      "category_id": 7
+      "category_id": 7,
+      "is_soft": false
     }
   },
     {
@@ -61,7 +65,8 @@
     "pk": 54,
     "fields": {
       "label": "An attention would melt you?",
-      "category_id": 7
+      "category_id": 7,
+      "is_soft": false
     }
   },
   {
@@ -69,7 +74,8 @@
     "pk": 55,
     "fields": {
       "label": "Which nationality is no way for a date?",
-      "category_id": 7
+      "category_id": 7,
+      "is_soft": false
     }
   }
 ]

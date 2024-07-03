@@ -20,6 +20,7 @@ class Question(models.Model):
     category = models.ForeignKey(
         Category, on_delete=models.CASCADE, related_name="questions"
     )
+    is_soft = models.BooleanField(default=True)
 
     objects = models.Manager()
 

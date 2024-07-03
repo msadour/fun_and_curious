@@ -95,7 +95,8 @@
     "pk": 108,
     "fields": {
       "label": "Normal sport or 'bed sport'?",
-      "category_id": 2
+      "category_id": 2,
+      "is_soft": false
     }
   },
     {

@@ -132,7 +132,7 @@
     "model": "game.Question",
     "pk": 56,
     "fields": {
-      "label": "Sweety or salty?",
+      "label": "Sweet or salty?",
       "category_id": 1
     }
   },

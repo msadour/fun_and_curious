@@ -100,7 +100,7 @@
     "model": "game.Question",
     "pk": 122,
     "fields": {
-      "label": "A country you never visit?",
+      "label": "A country you'll never visit?",
       "category_id": 3
     }
   },

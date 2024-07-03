@@ -22,4 +22,3 @@ class Command(BaseCommand):
         call_command("loaddata", "./fixtures/question_personality.json")
         call_command("loaddata", "./fixtures/question_sport.json")
         call_command("loaddata", "./fixtures/question_travel.json")
-        call_command("loaddata", "./fixtures/users.json")

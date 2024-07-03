@@ -2,6 +2,8 @@ from rest_framework import status, viewsets
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
+from app.core.game.models import Game
+from app.core.game.serializers import GameSerializer
 from app.core.user_profile.models import Profile
 from app.core.user_profile.serializers import ProfileListSerializer, ProfileSerializer
 
@@ -25,3 +27,14 @@ class ManageProfileViewSet(viewsets.ViewSet):
     def delete(self, request):
         Profile.objects.filter(id=request.user.id).delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class GameProfileViewSet(viewsets.ViewSet):
+    permission_classes = [
+        IsAuthenticated,
+    ]
+
+    def list(self, request):
+        games_filtered = Game.objects.filter(author=request.user)
+        games = GameSerializer(games_filtered, many=True).data
+        return Response(data=games, status=status.HTTP_200_OK)

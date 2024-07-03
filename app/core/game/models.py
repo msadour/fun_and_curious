@@ -2,6 +2,8 @@ from django.db import models
 
 from app.core.user_profile.models import Profile
 
+# from django.db.models import JSONField
+
 
 class Gender(models.TextChoices):
     MALE = "MALE", "Male"
@@ -31,6 +33,7 @@ class Game(models.Model):
         Profile, on_delete=models.CASCADE, null=True, related_name="games"
     )
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
+    content = models.JSONField(default=dict)
 
     objects = models.Manager()
 

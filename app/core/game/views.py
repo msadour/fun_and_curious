@@ -11,15 +11,12 @@ from app.layer.utils import create_pdf
 
 class RandomQuestionsViewSet(viewsets.ViewSet):
     def create(self, request: Request) -> HttpResponse:
-        current_user = request.user
+        author = None if request.user.is_anonymous else request.user
         label: str = request.data.get("label")
         gender: str = request.data.get("gender")
 
-        game_created = (
-            generate_game(label=label, gender=gender)
-            if current_user.is_anonymous
-            else generate_game(label=label, author=current_user, gender=gender)
-        )
+        game_created = generate_game(label=label, author=author, gender=gender)
+
         create_pdf(
             request,
             data={"games": game_created, "label": label},

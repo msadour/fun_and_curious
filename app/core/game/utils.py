@@ -26,11 +26,11 @@ def get_random_categories(gender: str) -> QuerySet[Category]:
     return randoms_categories
 
 
-def create_game(label: str, author: Optional[Profile]):
+def create_game(label: str, author: Optional[Profile], questions: list):
     new_game = Game.objects.create(label=label)
-    if author:
-        new_game.author = author
-        new_game.save()
+    new_game.author = author
+    new_game.content = questions
+    new_game.save()
 
 
 def get_filtered_random_question_ids(category: Category, only_soft: bool) -> list:
@@ -52,8 +52,6 @@ def generate_game(
     gender: Optional[str] = None,
     only_soft: bool = True,
 ) -> list:
-    create_game(label=label, author=author)
-
     randoms_categories: QuerySet[Category] = get_random_categories(gender=gender)
     questions = []
     for category in randoms_categories:
@@ -67,5 +65,8 @@ def generate_game(
         questions.append(
             {"category": category.label, "questions": randoms_questions.data}
         )
+
+    if author:
+        create_game(label=label, author=author, questions=questions)
 
     return questions

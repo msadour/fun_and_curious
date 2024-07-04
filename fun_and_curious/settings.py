@@ -11,8 +11,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 import os
+import socket
 from pathlib import Path
 
+import dj_database_url
 import django_heroku
 from dotenv import load_dotenv
 
@@ -105,6 +107,9 @@ DATABASES = {
         "PORT": os.environ.get("DB_PORT"),
     }
 }
+if socket.gethostbyname(socket.gethostname()) != "127.0.1.1":
+    db_from_env = dj_database_url.config(conn_max_age=500)
+    DATABASES["default"].update(db_from_env)
 
 
 # Password validation

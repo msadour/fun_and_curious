@@ -94,8 +94,8 @@ WSGI_APPLICATION = "fun_and_curious.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-in_pythonanywhere = os.environ.get("IN_PYTHONANYWHERE")
-if in_pythonanywhere is True:
+IN_PYTHONANYWHERE = eval(os.environ.get("IN_PYTHONANYWHERE"))
+if IN_PYTHONANYWHERE is True:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",

@@ -12,7 +12,7 @@ class Gender(models.TextChoices):
 
 class Category(models.Model):
     label = models.CharField(max_length=255, null=False, blank=False)
-    gender = models.CharField(choices=Gender.choices, null=True)
+    gender = models.CharField(max_length=255, choices=Gender.choices, null=True)
 
     objects = models.Manager()
 

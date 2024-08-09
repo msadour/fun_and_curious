@@ -14,7 +14,9 @@ class Migration(migrations.Migration):
             model_name="category",
             name="gender",
             field=models.CharField(
-                choices=[("MALE", "Male"), ("FEMALE", "Female")], null=True
+                choices=[("MALE", "Male"), ("FEMALE", "Female")],
+                null=True,
+                max_length=255,
             ),
         ),
     ]

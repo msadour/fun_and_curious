@@ -19,7 +19,11 @@ def get_random_categories(gender: str) -> QuerySet[Category]:
         categories = categories.exclude(gender="Male")
 
     category_ids: list = sorted(categories.values_list("id", flat=True))
-    random_category_ids: list = random.sample(category_ids, 6)
+    try:
+        random_category_ids: list = random.sample(category_ids, k=6)
+    except ValueError:
+        random_category_ids: list = random.choices(category_ids, k=6)
+
     randoms_categories: QuerySet[Category] = Category.objects.filter(
         id__in=random_category_ids
     )

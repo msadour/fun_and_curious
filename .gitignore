@@ -10,3 +10,4 @@ date_and_curious/.env
 eb-virt
 .ebextensions
 application.py
+db.sqlite3

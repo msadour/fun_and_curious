@@ -9,7 +9,7 @@ from app.core.game.serializers import QuestionSerializer
 from app.core.user_profile.models import Profile
 
 
-def get_random_categories(gender: str) -> QuerySet[Category]:
+def get_random_categories(gender: str = None) -> QuerySet[Category]:
     categories = Category.objects.annotate(total_questions=Count("questions")).filter(
         total_questions__gte=5
     )

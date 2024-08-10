@@ -21,11 +21,11 @@ def build_response(file_name: str) -> HttpResponse:
     url_file = str(settings.BASE_DIR) + f"\\{file_name}"
     if not os.path.exists(url_file):
         raise Http404
-    else:
-        with open(url_file, "rb") as fh:
-            response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
-            response["Content-Disposition"] = "inline; filename=" + os.path.basename(
-                url_file
-            )
-        os.remove(url_file)
-        return response
+
+    with open(url_file, "rb") as fh:
+        response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
+        response["Content-Disposition"] = "inline; filename=" + os.path.basename(
+            url_file
+        )
+    os.remove(url_file)
+    return response

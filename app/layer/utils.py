@@ -3,7 +3,7 @@ from typing import Dict
 
 import pdfkit
 from django.conf import settings
-from django.http import Http404, HttpResponse
+from django.http import HttpResponse
 from django.shortcuts import render
 from rest_framework.request import Request
 
@@ -17,11 +17,10 @@ def create_pdf(request: Request, data: dict, template: str, file_name: str) -> D
 
 def build_response(file_name: str) -> HttpResponse:
     url_file = str(settings.BASE_DIR) + f"\\{file_name}"
-    print("------------------------------------")
-    print(url_file)
-    print("------------------------------------")
     if not os.path.exists(url_file):
-        raise Http404
+        from rest_framework.response import Response
+
+        return Response(data={"url file": url_file})
 
     with open(url_file, "rb") as fh:
         response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")

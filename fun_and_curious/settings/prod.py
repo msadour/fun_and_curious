@@ -9,3 +9,5 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+WKHTMLTOPDF_PATH = "/home/msadr/wkhtmltopdf/bin/wkhtmltopdf.exe"

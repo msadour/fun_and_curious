@@ -10,9 +10,7 @@ from rest_framework.request import Request
 
 def create_pdf(request: Request, data: dict, template: str, file_name: str) -> Dict:
     html_game = render(request, template, data).content.decode()
-    config = pdfkit.configuration(
-        wkhtmltopdf=r"C:\Program Files\wkhtmltopdf\\bin\wkhtmltopdf.exe"
-    )
+    config = pdfkit.configuration(wkhtmltopdf=settings.WKHTMLTOPDF_PATH)
     pdfkit.from_string(html_game, file_name, configuration=config)
     return {"file_name": file_name}
 

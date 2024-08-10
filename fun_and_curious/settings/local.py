@@ -1,9 +1,5 @@
 import os
 
-# from fun_and_curious.settings.base import Base
-
-
-# class Local(Base):
 DEBUG = True
 
 DATABASES = {
@@ -16,3 +12,6 @@ DATABASES = {
         "PORT": os.environ.get("DB_PORT"),
     }
 }
+
+
+WKHTMLTOPDF_PATH = "C:\Program Files\wkhtmltopdf\\bin\wkhtmltopdf.exe"

@@ -1,6 +1,4 @@
-from django.conf import settings
 from rest_framework import viewsets
-from rest_framework.response import Response
 
 from app.core.game.serializers import GameSerializer
 from app.core.game.utils import generate_game
@@ -16,8 +14,8 @@ class RandomQuestionsViewSet(viewsets.ViewSet):
         game_created = generate_game(label=label, author=author, gender=gender)
         game_data = GameSerializer(game_created).data
 
-        if settings.IN_PYTHONANYWHERE:
-            return Response(data=game_data)
+        # if settings.IN_PYTHONANYWHERE:
+        #     return Response(data=game_data)
 
         file_name = "game_created.pdf"
         create_pdf(

@@ -10,4 +10,4 @@ DATABASES = {
     }
 }
 
-WKHTMLTOPDF_PATH = "/home/msadr/wkhtmltopdf/bin/wkhtmltopdf.exe"
+WKHTMLTOPDF_PATH = "/home/msadr/wkhtmltopdf-0.12.5/src/pdf/wkhtmltopdf.cc"

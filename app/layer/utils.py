@@ -17,6 +17,9 @@ def create_pdf(request: Request, data: dict, template: str, file_name: str) -> D
 
 def build_response(file_name: str) -> HttpResponse:
     url_file = str(settings.BASE_DIR) + f"\\{file_name}"
+    print("------------------------------------")
+    print(url_file)
+    print("------------------------------------")
     if not os.path.exists(url_file):
         raise Http404
 

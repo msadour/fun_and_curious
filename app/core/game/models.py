@@ -1,8 +1,8 @@
+import uuid
+
 from django.db import models
 
 from app.core.user_profile.models import Profile
-
-# from django.db.models import JSONField
 
 
 class Gender(models.TextChoices):
@@ -36,6 +36,10 @@ class Game(models.Model):
     content = models.JSONField(default=dict)
 
     objects = models.Manager()
+
+    @property
+    def file_name(self):
+        return f"{uuid.uuid4().hex}.pdf"
 
 
 class QuestionCategoryGame(models.Model):

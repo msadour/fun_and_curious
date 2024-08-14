@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from rest_framework.response import Response
 
+from app.core.game.models import Game
 from app.core.game.serializers import GameSerializer
 from app.core.game.utils import generate_game
 from app.layer.utils import build_response, create_pdf
@@ -12,11 +13,11 @@ class RandomQuestionsViewSet(viewsets.ViewSet):
         label: str = request.data.get("label")
         gender: str = request.data.get("gender")
 
-        game_created = generate_game(label=label, author=author, gender=gender)
+        game_created: Game = generate_game(label=label, author=author, gender=gender)
         game_data = GameSerializer(game_created).data
 
         try:
-            file_name = "game_created.pdf"
+            file_name = game_created.file_name
             create_pdf(
                 request=request,
                 data={"games": [game_data]},

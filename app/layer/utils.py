@@ -18,9 +18,9 @@ def create_pdf(request: Request, data: dict, template: str, file_name: str) -> D
 def build_response(file_name: str) -> HttpResponse:
     url_file = os.path.join(str(settings.BASE_DIR), file_name)
     if not os.path.exists(url_file):
-        from rest_framework.response import Response
-
-        return Response(data={"url file not found": url_file})
+        url_file = os.path.join(str(settings.BASE_DIR.parent), file_name)
+        if not os.path.exists(url_file):
+            raise OSError("File not found")
 
     with open(url_file, "rb") as fh:
         response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")

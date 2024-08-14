@@ -1,4 +1,5 @@
 from rest_framework import viewsets
+from rest_framework.response import Response
 
 from app.core.game.serializers import GameSerializer
 from app.core.game.utils import generate_game
@@ -14,14 +15,15 @@ class RandomQuestionsViewSet(viewsets.ViewSet):
         game_created = generate_game(label=label, author=author, gender=gender)
         game_data = GameSerializer(game_created).data
 
-        # if settings.IN_PYTHONANYWHERE:
-        #     return Response(data=game_data)
-
-        file_name = "game_created.pdf"
-        create_pdf(
-            request=request,
-            data={"games": [game_data]},
-            template="game/games.html",
-            file_name=file_name,
-        )
-        return build_response(file_name=file_name)
+        try:
+            file_name = "game_created.pdf"
+            create_pdf(
+                request=request,
+                data={"games": [game_data]},
+                template="game/games.html",
+                file_name=file_name,
+            )
+            return build_response(file_name=file_name)
+        except Exception as e:
+            data = {"error": getattr(e, "message", repr(e)), "data": game_data}
+            return Response(data=data)

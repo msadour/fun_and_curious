@@ -5,8 +5,6 @@ from app.core.user_profile.models import Profile
 
 
 class Command(BaseCommand):
-    help = "Marks the specified blog post as published."
-
     def handle(self, *args, **options):
         Question.objects.all().delete()
         Category.objects.all().delete()

@@ -12,6 +12,7 @@ class RandomQuestionsViewSet(viewsets.ViewSet):
         label: str = request.data.get("label")
         gender: str = request.data.get("gender")
         only_soft: bool = request.data.get("only_soft")
+        language: str = request.data.get("language")
 
         game_created = self.serializer_class().create(
             validated_data={
@@ -19,6 +20,7 @@ class RandomQuestionsViewSet(viewsets.ViewSet):
                 "author": author,
                 "gender": gender,
                 "only_soft": only_soft,
+                "language": language,
             }
         )
 

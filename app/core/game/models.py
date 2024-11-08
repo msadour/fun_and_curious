@@ -74,9 +74,7 @@ class Game(models.Model):
         return randoms_categories
 
     def generate_content(
-        self,
-        gender: Optional[str] = None,
-        only_soft: bool = True,
+        self, gender: Optional[str] = None, only_soft: bool = True, language: str = None
     ):
         randoms_categories: QuerySet[Category] = self.get_random_categories(
             gender=gender
@@ -86,11 +84,22 @@ class Game(models.Model):
             random_question_ids = category.get_filtered_random_question_ids(
                 only_soft=only_soft
             )
-            randoms_questions = Question.objects.filter(
-                id__in=random_question_ids
-            ).values()
+            category_label = category.label
+            randoms_questions = Question.objects.filter(id__in=random_question_ids)
+
+            if language:
+                if language == "de":
+                    category_label = category.label_de
+                elif language == "fr":
+                    category_label = category.label_fr
+
+                randoms_questions = randoms_questions.values("id", f"label_{language}")
+            else:
+                category_label = category.label
+                randoms_questions = randoms_questions.values("id", "label")
+
             questions.append(
-                {"category": category.label, "questions": list(randoms_questions)}
+                {"category": category_label, "questions": list(randoms_questions)}
             )
 
         self.content = questions

@@ -13,3 +13,5 @@ EXCEPTIONS_HANDLING_MIDDLEWARE = (
     ProfileAlreadyExistsError,
     PasswordError,
 )
+
+LANGUAGES_TRANSLATION_AVAILABLE = ["en", "de"]

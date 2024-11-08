@@ -15,9 +15,20 @@
                 </tr>
 
                 {% for question in game_data.questions %}
-                    <tr>
-                        <td> {{ question.label }} </td>
-                    </tr>
+                    {% if question.label_de %}
+                        <tr>
+                            <td> {{ question.label_de }} </td>
+                        </tr>
+                    {% elif question.label_fr %}
+                        <tr>
+                            <td> {{ question.label_fr }} </td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td> {{ question.label }} </td>
+                        </tr>
+                    {% endif %}
+
                 {% endfor %}
 
             </table>

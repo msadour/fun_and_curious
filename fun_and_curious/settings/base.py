@@ -22,6 +22,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    "modeltranslation",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -103,6 +104,17 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
+
+gettext = lambda s: s
+LANGUAGES = (
+    ("en", gettext("English")),
+    ("de", gettext("German")),
+    ("fr", gettext("French")),
+)
+
+MODELTRANSLATION_LANGUAGES = ("en", "de", "fr")
+
+MODELTRANSLATION_AUTO_POPULATE = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/

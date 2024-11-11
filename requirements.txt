@@ -3,6 +3,7 @@ Django==4.2
 djangorestframework==3.14.0
 django-modeltranslation==0.19.10
 isort==5.12.0
+modeltranslation
 pdfkit==1.0.0
 pre-commit==3.2.2
 psycopg2==2.9.6

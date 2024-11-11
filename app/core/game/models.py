@@ -52,6 +52,13 @@ class Game(models.Model):
     objects = models.Manager()
 
     @property
+    def created_at_as_text(self):
+        return (
+            f'Created the {self.created_at.date().strftime("%d/%m/%Y")} a'
+            f't {self.created_at.time().strftime("%H:%M")}'
+        )
+
+    @property
     def file_name(self):
         return f"{uuid.uuid4().hex}.pdf"
 

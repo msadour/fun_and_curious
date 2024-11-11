@@ -10,6 +10,7 @@ class GameSerializer(serializers.ModelSerializer):
 
     created_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
     author = serializers.CharField(source="author.username", read_only=True)
+    created_at_as_text = serializers.CharField()
 
     def create(self, validated_data):
         label: str = validated_data.get("label")

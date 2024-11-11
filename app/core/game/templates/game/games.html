@@ -1,30 +1,34 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+    <head>
+        <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+        <style type="text/css"></style>
+    </head>
+    <body>
     {% for game in games %}
 
-        <h1>{{ game.label }} created at {{ game.created_at }}</h1>
+        <h1>{{ game.label }}</h1>
+        <p>{{ game.created_at_as_text }}</p>
 
         {% for game_data in game.content %}
-            <table>
+            <table style="border-collapse: collapse;margin: 25px 0;font-family: sans-serif;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); width: 50%; margin-left: auto; margin-right: auto;">
                 <tr>
-                    <th> {{ game_data.category }} </th>
+                    <th style="background-color: red;color: #ffffff;text-align: center;">
+                        <h2>{{ game_data.category }}</h2>
+                    </th>
                 </tr>
 
                 {% for question in game_data.questions %}
                     {% if question.label_de %}
-                        <tr>
+                        <tr style="border-bottom: 1px solid #dddddd;">
                             <td> {{ question.label_de }} </td>
                         </tr>
                     {% elif question.label_fr %}
-                        <tr>
+                        <tr style="border-bottom: 1px solid #dddddd;">
                             <td> {{ question.label_fr }} </td>
                         </tr>
                     {% else %}
-                        <tr>
+                        <tr style="border-bottom: 1px solid #dddddd;">
                             <td> {{ question.label }} </td>
                         </tr>
                     {% endif %}
@@ -32,7 +36,6 @@
                 {% endfor %}
 
             </table>
-            <br /><br />
         {% endfor %}
     {% endfor %}
 </body>

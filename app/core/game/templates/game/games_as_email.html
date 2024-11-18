@@ -1,0 +1,29 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+        <style type="text/css"></style>
+    </head>
+    <body>
+    {% for game in games %}
+
+        <h1>{{ game.label }}</h1>
+        <p>{{ game.created_at_as_text }}</p>
+
+        {% for game_data in game.content %}
+
+            <h2>{{ game_data.category }}</h2>
+                {% for question in game_data.questions %}
+                    {% if question.label_de %}
+                            <p> {{ question.label_de }} </p>
+                    {% elif question.label_fr %}
+                            <p> {{ question.label_fr }} </p>
+                    {% else %}
+                            <p> {{ question.label }} </p>
+                    {% endif %}
+
+                {% endfor %}
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>

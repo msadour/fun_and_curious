@@ -41,7 +41,7 @@ class AuthTokenSerializer(serializers.Serializer):
         return profile
 
     def validate(self, attrs: Any) -> Profile:
-        if type(attrs) == QueryDict:
+        if isinstance(attrs, QueryDict):
             attrs = attrs.dict()
 
         username: str = attrs.get("username")

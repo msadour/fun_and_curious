@@ -53,6 +53,6 @@ jobs:
         POSTGRES_PASSWORD: test_password
         POSTGRES_DB: test_db
         DATABASE_URL: postgres://test_user:test_password@localhost:5432/test_db
-        SECRET_KEY: mqx6nbwy!5f$^919_u6zp^+6b394#gri%m4kfhjkm22pk+lw7m
+        SECRET_KEY: ${{ secrets.SECRET_KEY }}
       run: |
         pytest

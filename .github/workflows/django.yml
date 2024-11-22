@@ -28,7 +28,7 @@ jobs:
     - name: Clean code
       run: |
         black app
-        flake8 app
+        flake8 app --exclude=migrations
         isort app
     - name: Run Tests
       run: |

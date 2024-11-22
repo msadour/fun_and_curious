@@ -15,3 +15,5 @@ EXCEPTIONS_HANDLING_MIDDLEWARE = (
 )
 
 LANGUAGES_TRANSLATION_AVAILABLE = ["en", "de"]
+
+URL_BREVO = "https://api.brevo.com/v3/smtp/email"

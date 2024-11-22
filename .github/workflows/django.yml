@@ -12,13 +12,18 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:14
+        image: postgres:14  # Specify the PostgreSQL version
         ports:
           - 5432:5432
         env:
           POSTGRES_USER: test_user
           POSTGRES_PASSWORD: test_password
           POSTGRES_DB: test_db
+        options: >-
+          --health-cmd="pg_isready -U test_user -d test_db"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
 
     strategy:
       max-parallel: 4
@@ -42,6 +47,11 @@ jobs:
         isort app
     - name: Run Tests
       env:
+        POSTGRES_HOST: localhost
+        POSTGRES_PORT: 5432
+        POSTGRES_USER: test_user
+        POSTGRES_PASSWORD: test_password
+        POSTGRES_DB: test_db
         DATABASE_URL: postgres://test_user:test_password@localhost:5432/test_db
       run: |
         pytest

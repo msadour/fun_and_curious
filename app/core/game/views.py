@@ -2,8 +2,8 @@ from rest_framework import viewsets
 from rest_framework.response import Response
 
 from app.core.game.serializers import GameSerializer
-from app.layer.email_sending import EmailSender
-from app.layer.pdf import build_response_with_pdf, create_pdf
+from app.layer.external_libs.mailing import EmailSender
+from app.layer.external_libs.pdf import build_response_with_pdf, create_pdf
 
 
 class RandomQuestionsViewSet(viewsets.ViewSet):

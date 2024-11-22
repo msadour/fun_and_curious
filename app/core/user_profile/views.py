@@ -6,7 +6,7 @@ from app.core.game.models import Game
 from app.core.game.serializers import GameSerializer
 from app.core.user_profile.models import Profile
 from app.core.user_profile.serializers import ProfileListSerializer, ProfileSerializer
-from app.layer.pdf import build_response_with_pdf, create_pdf
+from app.layer.external_libs.pdf import build_response_with_pdf, create_pdf
 
 
 class ManageProfileViewSet(viewsets.ViewSet):

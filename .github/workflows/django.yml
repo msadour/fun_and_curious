@@ -49,6 +49,11 @@ jobs:
         isort app
     - name: Run Tests
       env:
+        POSTGRES_HOST: localhost
+        POSTGRES_PORT: 5432
+        POSTGRES_USER: test_user
+        POSTGRES_PASSWORD: test_password
+        POSTGRES_DB: test_db
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
         DATABASE_URL: postgres://test_user:test_password@localhost:5432/test_db
       run: |

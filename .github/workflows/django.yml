@@ -27,9 +27,9 @@ jobs:
         pip install -r requirements.txt
     - name: Clean code
       run: |
-        black .\app\
-        flake8 .\app\
-        isort .\app\
+        black app
+        flake8 app
+        isort app
     - name: Run Tests
       run: |
         pytest

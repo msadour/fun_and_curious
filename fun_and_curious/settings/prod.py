@@ -1,6 +1,5 @@
 from fun_and_curious.settings.base import BASE_DIR
 
-# class Prod(Base):
 DEBUG = False
 
 DATABASES = {

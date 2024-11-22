@@ -13,5 +13,6 @@ DATABASES = {
     }
 }
 
-
-WKHTMLTOPDF_PATH = "C:\Program Files\wkhtmltopdf\\bin\wkhtmltopdf.exe"
+WKHTMLTOPDF_PATH = os.path.join(
+    "C:\\", "Program Files", "wkhtmltopdf", "bin", "wkhtmltopdf.exe"
+)

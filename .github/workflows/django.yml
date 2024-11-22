@@ -31,5 +31,7 @@ jobs:
         flake8 app --exclude=migrations
         isort app
     - name: Run Tests
+      env:
+        IN_PYTHONANYWHERE: True
       run: |
         pytest

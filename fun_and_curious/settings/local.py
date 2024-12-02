@@ -2,7 +2,7 @@ import os
 
 DEBUG = True
 
-DATABASES = {
+DATABASES: dict = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": os.environ.get("DB_NAME", "test_db"),

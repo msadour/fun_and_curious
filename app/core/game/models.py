@@ -63,7 +63,7 @@ class Game(models.Model):
         return f"{uuid.uuid4().hex}.pdf"
 
     @staticmethod
-    def get_random_categories(gender: str = None) -> QuerySet[Category]:
+    def get_random_categories(gender: Optional[str] = None) -> QuerySet[Category]:
         categories = Category.objects.annotate(
             total_questions=Count("questions")
         ).filter(total_questions__gte=5)
@@ -81,7 +81,10 @@ class Game(models.Model):
         return randoms_categories
 
     def generate_content(
-        self, gender: Optional[str] = None, only_soft: bool = True, language: str = None
+        self,
+        gender: Optional[str] = None,
+        only_soft: Optional[bool] = True,
+        language: Optional[str] = None,
     ):
         randoms_categories: QuerySet[Category] = self.get_random_categories(
             gender=gender

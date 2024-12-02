@@ -6,7 +6,7 @@ django-modeltranslation==0.19.10
 factory-boy==3.3.1
 flake8==7.1.1
 isort==5.12.0
-mypy==4.12.2
+mypy==1.13.0
 pdfkit==1.0.0
 pre-commit==3.2.2
 psycopg==3.2.3

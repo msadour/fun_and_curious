@@ -9,7 +9,7 @@ load_dotenv(env_path)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-IN_PYTHONANYWHERE = eval(os.environ.get("IN_PYTHONANYWHERE"))
+IN_PYTHONANYWHERE = eval(os.environ.get("IN_PYTHONANYWHERE", "False"))
 
 
 # class Base(Configuration):

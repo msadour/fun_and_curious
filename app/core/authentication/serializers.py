@@ -25,8 +25,11 @@ class AuthTokenSerializer(serializers.Serializer):
     )
 
     def authenticate_user(
-        self, username: str = None, email: str = None, password: str = None
-    ) -> Optional[Profile]:
+        self,
+        username: Optional[str] = None,
+        email: Optional[str] = None,
+        password: Optional[str] = None,
+    ) -> Profile:
         profile = Profile.objects.filter(Q(username=username) | Q(email=email)).first()
 
         if profile is None:
@@ -47,7 +50,7 @@ class AuthTokenSerializer(serializers.Serializer):
         username: str = attrs.get("username")
         email: str = attrs.get("email")
         password: str = attrs.get("password")
-        profile: Optional[Profile] = self.authenticate_user(
+        profile: Profile = self.authenticate_user(
             username=username, email=email, password=password
         )
         token, created = Token.objects.get_or_create(user=profile)

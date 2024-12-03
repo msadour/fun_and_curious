@@ -14,8 +14,6 @@ class EmailSender:
             "accept": "application/json",
             "api-key": BREVO_MAIL_API_KEY,
         }
-        self.to_email = to_email
-        self.request = request
         html_game = render(request, template, {"games": [game_data]}).content.decode()
         self.email_data = {
             "sender": {"name": "Mehdi", "email": "sadour.mehdi@gmail.com"},
